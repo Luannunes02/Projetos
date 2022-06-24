@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(0, 51, 47), rgb(34, 34, 34));
+    font-family: sans-serif;
+    color: white;
+}
+
+.info {         /* essa div é o cartão com toda informação */
+    border: 3px solid rgb(0, 104, 0);
+    width: 20%;
+    height: 600px;
+    margin: 150px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 59, 40, 0.9);
+}
+
+.myImage { /*  minha imagem e suas propriedas */
+    width: 110px;
+    margin: 25px 135px 2px;
+    border-radius: 100px;
+    outline: solid 1px rgb(15, 0, 0);
+    transition: filter .1s;
+}
+
+.myImage:hover {        /*  animação ao passar o mouse por cima da minha imagem */
+    cursor: pointer;
+    filter: brightness(1.3);
+    /*width: 103px;*/
+    box-sizing: border-box;
+}
+
+.myName {       /*  Alinhamento do meu texto */
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin-top: 5px;
+    opacity: 0.7;
+}
+
+.ability {
+    text-align: left;
+    margin: 30px 0px 22px 15px;
+    opacity: 0.9;
+}
+
+a {
+    border: none;
+}
+
+#skills {       /*  propriedas e valores das minhas habilidades(html, css...) */
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    display: block;
+    padding-bottom: 40px;
+    height: 150px;
+    text-align: center;
+}
+
+.skillText {
+    color: rgb(255, 189, 255);
+    text-decoration: none;    
+    border: 2px solid black;  
+    box-sizing: border-box;
+    background-color: rgba(0, 61, 41, 0.678);
+    transition: filter .2s;
+}
+
+.skillText:hover {
+    
+    filter: brightness(5.0);
+}
+
+#html {
+    padding: 4px 150px;
+    margin-left: -10px;
+
+}
+
+#css {
+    padding: 4px 155px;
+    margin-left: -10px;
+}
+
+#javascript {
+    padding: 4px 135px;
+    margin-left: -10px;
+}
+
+#python {
+    padding: 4px 148px;
+    margin-left: -10px;
+}
+
+#c {
+    padding: 4px 125px;
+    margin-left: -10px;
+}
+
+.aboutMy {
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.myContacts {
+    margin: 25px auto 5px;
+    width: 40%;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.allLinks {
+    padding: 0;
+    margin: 0;
+}
+
+.links {
+    width: 30px;
+    border-radius: 100px;
+    transition: filter 1.4s;
+    transition: width .4s;
+}
+
+.links:hover {
+    width: 40px; 
+    filter: blur(1.5);
+}
