@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="devAcademia">
+            <img src="./imgs/DevAcademiaByLuan.png" alt="devAcademiaLogo" class="devAcaLogo">
+            <h2>Cadastre-se e tenha acesso ao nosso serviço</h2>
+        </div>
+
+        <div class="formMain">
+            <form>
+                <div class="inputBox">
+                    <label class="labelUser" for="name">Nome:</label><br>
+                    <input type="text" name="name" id="name" class="inputUser" placeholder="Jorge Matheus" required>
+                </div>
+                <div class="inputBox">
+                    <label class="labelUser" for="email">E-mail:</label> <br>
+                    <input type="email" name="email" id="email" class="inputUser" placeholder="seuemail@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Por favor utilize um e-mail existente." required>
+                </div>
+                <div class="inputBox">
+                    <label class="labelUser" for="password">Senha:</label> <br>
+                    <input type="password" name="password" id="password" class="inputUser" placeholder="2131Casa" pattern="[0-9a-zA-Z]{8,20}" title="Por favor utilize 8 ou mais caracteres, letra(s) maiúscula(s), minúscula(s) e número(s)." required>
+                </div>
+                <p class="pGenero">Gênero:</p>
+                <div class="inputGenero">
+                    <input type="radio" name="genero" class="inputRadio" id="masculino" required>
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div class="inputGenero">
+                    <input type="radio" name="genero" class="inputRadio" id="feminino" required>
+                    <label for="feminino">Feminino</label>
+                </div>
+                <div class="inputGenero">
+                    <input type="radio" name="genero" class="inputRadio" id="outros" required>
+                    <label for="outros">Outros</label>
+                </div>
+                <p>Se preferir, se conecte com uma das redes abaixo:</p>
+                <div class="socialContainer">
+                    <img src="./imgs/Google.png" alt="Google" class="social">
+                    <img src="./imgs/facebook.png" alt="Facebook" class="social" id="facebook">
+                </div>
+                <button autofocus>Cadastrar</button>
+                <p class="pLogin">Se já tiver cadastro, então <a href="#">faça Login.</a> </p>
+            </form>
+
+           <!--<div>
+                <img src="./imgs/weights-animate.svg" alt="mulherMalhando" class="workOut">
+            </div>--> 
+        </div>
+    </main>
+</body>
+
+</html>
